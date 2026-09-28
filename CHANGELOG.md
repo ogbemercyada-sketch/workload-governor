@@ -9,6 +9,12 @@ For guidelines on writing changelog entries see [docs/changelog-guide.md](docs/c
 
 ## [Unreleased]
 
+### Added
+- Persist indexer ledger sync checkpoints to dedicated database table `indexer_checkpoints` with transactional commit and startup recovery fallback (#849).
+- Instrument Horizon and Soroban RPC calls in `backend/src/HorizonService.ts` with OpenTelemetry spans and collector service in `docker-compose.yml` (#850).
+- Add ARIA live region to `ContributorProfile.tsx` for real-time workload cap auditory announcements (#851).
+- Implement keyboard Escape key dismissal and focus restoration upon modal dismissal or unmount in `TxConfirmModal` (#852).
+
 ---
 
 ## [0.3.0] - 2026-08-28
